@@ -40,7 +40,7 @@ function onButtonClick(event, items) {
 function setEventListeners(items) {
 	const logo = document.querySelector('.logo');
 	const buttons = document.querySelector('.buttons');
-	logo.addEventListener('click', displayItems(items));
+	logo.addEventListener('click', () => displayItems(items));
 	buttons.addEventListener('click', (event) => {
 		onButtonClick(event, items);
 	});
